@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ThinKsaDev.ItDeveloper.Mvc.props" />
+</Project>
