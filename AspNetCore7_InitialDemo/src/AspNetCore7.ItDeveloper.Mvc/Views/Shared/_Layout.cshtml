@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard | Dynamic Admin Template</title>
+    <!-- Mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="application-name" content="" />
+
+    <!-- Import google fonts - Heading first/ text second -->
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+    <link href="~/bundle/css.core.min.css" rel="stylesheet" />
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="icon" href="img/ico/favicon.ico" type="image/png">
+    <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+    <meta name="msapplication-TileColor" content="#3399cc" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AspNetCore7.ItDeveloper.Mvc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="page-content-inner">
+        <!-- _CookieConsetPartial -->
+        @RenderBody()
+
+    </div>
+
+    @*forma mais antigo*@
+    @*@await Html.PartialAsync("PartialViews/_footer");*@
+    
+    @*forma mais atual*@
+    <partial name="PartialViews/_footer" />
+
+    <!-- End #footer  -->
+    <!-- Back to top -->
+    <div id="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+
+
+    <!-- Javascripts -->
+    <!-- Load pace first - Esta Lib deve vir primeiro-->
+    <script src="~/bundle/firstpage.min.js"></script>
+    <script src="~/js/libs/jquery-2.1.1.min.js"></script>
+    <script src="~/js/libs/jquery-ui-1.10.4.min.js"></script>
+    <script src="~/bundle/allpages.min.js"></script>
+    <script src="~/bundle/core.min.js"></script>
+    <script src="~/js/libs/date.js"></script>
+    <script src="~/bundle/core.dashboard.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

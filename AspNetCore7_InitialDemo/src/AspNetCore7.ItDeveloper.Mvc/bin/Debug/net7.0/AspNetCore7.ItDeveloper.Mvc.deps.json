@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AspNetCore7.ItDeveloper.Mvc/1.0.0": {
+        "runtime": {
+          "AspNetCore7.ItDeveloper.Mvc.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AspNetCore7.ItDeveloper.Mvc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

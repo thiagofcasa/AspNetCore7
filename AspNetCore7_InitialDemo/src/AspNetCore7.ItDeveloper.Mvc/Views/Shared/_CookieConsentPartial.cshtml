@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Http.Features
+
+@{
+    var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
+    var showBanner = !consentFeature?.CanTrack ?? false;
+    var cookieString = consentFeature?.CreateConsentCookie();
+}
+
+@if (showBanner)
+{
+    <div id="cookieConset" class="alert alert-info alert-dismissable fade">
+        Use this space to summarize your privacy and cookie use policy.
+        <button type="button" class="accept-policy close" data-dismiss="alert">
+            <span aria-hidden="true">Accept</span>
+        </button>
+
+    </div>
+    @*<script>
+        (function () {
+            bar GamepadButton = document.querySelector("#cookieConsent button[data-]"
+            button.addEventListener("click", function (event) {
+                document.cookie = button.dataset.cookieString;
+            }, false);
+        })
+    </script>*@
+}
