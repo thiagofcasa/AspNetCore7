@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Present
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinKsaDev.ItDeveloper.Mvc", "src\ThinKsaDev.ItDeveloper.Mvc\ThinKsaDev.ItDeveloper.Mvc.csproj", "{CEDF6FAA-B89B-44C8-B10C-270403295510}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{3487AA1A-940D-4AF3-8B43-43F5CC2A0184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinKsaDev.ItDeveloper.Domain", "src\ThinKsaDev.ItDeveloper.Domain\ThinKsaDev.ItDeveloper.Domain.csproj", "{312AE1A9-EFB8-4E16-A59C-85FB7BBF2344}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{CEDF6FAA-B89B-44C8-B10C-270403295510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEDF6FAA-B89B-44C8-B10C-270403295510}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEDF6FAA-B89B-44C8-B10C-270403295510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312AE1A9-EFB8-4E16-A59C-85FB7BBF2344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312AE1A9-EFB8-4E16-A59C-85FB7BBF2344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312AE1A9-EFB8-4E16-A59C-85FB7BBF2344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312AE1A9-EFB8-4E16-A59C-85FB7BBF2344}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CEDF6FAA-B89B-44C8-B10C-270403295510} = {81248D14-9400-4599-BEF9-8BDE462C224A}
+		{312AE1A9-EFB8-4E16-A59C-85FB7BBF2344} = {3487AA1A-940D-4AF3-8B43-43F5CC2A0184}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90A46892-D635-4467-AE94-C8390E173F1A}

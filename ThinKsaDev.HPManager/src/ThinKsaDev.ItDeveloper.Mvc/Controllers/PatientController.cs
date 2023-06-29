@@ -18,11 +18,20 @@ namespace ThinKsaDev.ItDeveloper.Mvc.Controllers
             return View(patients);
         }
 
-        [Route("patient-detail/{id}")]
+        [HttpGet("patient-detail/{id}")]
         public IActionResult PatientDetails(string id)
         {
-            return View();
+            var patient = GetPatient(id);
+
+            if (patient == null)
+            {
+                return NotFound();
+            }
+
+            return View(patient);
         }
+
+        
 
         [Route("add-patient")]
         [HttpPost("add-patient")]
@@ -60,7 +69,7 @@ namespace ThinKsaDev.ItDeveloper.Mvc.Controllers
                 },
                 new Patient()
                 {
-                    Name = "Domenique",
+                    Name = "Dominique",
                     Cpf = "12345678910",
                     Telefones = new List<Telefone>()
                     {
@@ -72,6 +81,20 @@ namespace ThinKsaDev.ItDeveloper.Mvc.Controllers
             };
 
             return patients;
+        }
+
+        private object GetPatient(string id)
+        {
+            var patients = GetPatients();
+            if (id != string.Empty && patients != null)
+            {
+                var patient = patients.FirstOrDefault(p => p.Name.Contains(id));
+                if (patient != null)
+                {
+                    return patient;
+                }
+            }
+            return null;
         }
         #endregion
     }

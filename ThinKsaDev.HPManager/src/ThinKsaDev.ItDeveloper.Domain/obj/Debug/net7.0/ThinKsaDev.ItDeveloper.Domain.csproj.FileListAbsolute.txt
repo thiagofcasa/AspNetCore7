@@ -1,0 +1,12 @@
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.deps.json
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.pdb
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.csproj.AssemblyReference.cache
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.AssemblyInfoInputs.cache
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.AssemblyInfo.cs
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.csproj.CoreCompileInputs.cache
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\refint\ThinKsaDev.ItDeveloper.Domain.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.pdb
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Domain\obj\Debug\net7.0\ref\ThinKsaDev.ItDeveloper.Domain.dll
