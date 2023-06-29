@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{81248D14-9400-4599-BEF9-8BDE462C224A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinKsaDev.ItDeveloper.Mvc", "src\Cooperchip.ItDeveloper.Mvc\ThinKsaDev.ItDeveloper.Mvc.csproj", "{E2FBB7B4-4F74-41B2-B2A9-A7F297DC51C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinKsaDev.ItDeveloper.Mvc", "src\ThinKsaDev.ItDeveloper.Mvc\ThinKsaDev.ItDeveloper.Mvc.csproj", "{CEDF6FAA-B89B-44C8-B10C-270403295510}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E2FBB7B4-4F74-41B2-B2A9-A7F297DC51C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2FBB7B4-4F74-41B2-B2A9-A7F297DC51C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2FBB7B4-4F74-41B2-B2A9-A7F297DC51C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2FBB7B4-4F74-41B2-B2A9-A7F297DC51C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEDF6FAA-B89B-44C8-B10C-270403295510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEDF6FAA-B89B-44C8-B10C-270403295510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEDF6FAA-B89B-44C8-B10C-270403295510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEDF6FAA-B89B-44C8-B10C-270403295510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E2FBB7B4-4F74-41B2-B2A9-A7F297DC51C1} = {81248D14-9400-4599-BEF9-8BDE462C224A}
+		{CEDF6FAA-B89B-44C8-B10C-270403295510} = {81248D14-9400-4599-BEF9-8BDE462C224A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90A46892-D635-4467-AE94-C8390E173F1A}

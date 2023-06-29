@@ -1,0 +1,56 @@
+﻿@using ThinKsaDev.ItDeveloper.Mvc.Controllers;
+@model IEnumerable<Patient>
+
+<h1>Gestão de Paciente</h1>
+
+<hr />
+<p>
+    O que é Lorem Ipsum?
+    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+</p>
+
+<div class="row">
+    <div class="panel panel-body">
+        @*col-md-12: tela media com 12 colunas, col-sm-4 tela smal com 4 colunas...*@
+        <div class="col-12">
+            <div class="row">
+                <div class="panel panel-success">
+                    <div class="panel panel-heading">
+                        <h3>Lista de Pacientes</h3>
+                    </div>
+                </div>
+
+                <table class="table table-striped table-hover" >
+                    <thead>
+                        <tr>
+                            <th>Id do Paciente</th>
+                            <th>Nome do Paciente</th>
+                            <th>Cpf</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>@item.Cpf</td>
+                                <td>
+                                    <a class="brn btn-dark" asp-route-id="@item.Name" asp-controller="Patient" 
+                                                    asp-action="PatientDetails" title="Detalhes de Paciente">
+                                          Detalhes de Paciente</a>
+
+                                    <a class="btn btn-info" href="javascript:void();" title="Editar Paciente">Editar Paciente</a>
+                                    <a class="btn btn-danger" href="javascript:void();" title="Excluir Paciente">Excluir Paciente</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>
