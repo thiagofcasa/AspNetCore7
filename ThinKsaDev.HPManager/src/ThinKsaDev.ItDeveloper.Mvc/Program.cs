@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ThinKsaDev.ItDeveloper.Data.Data.ORM;
+
 namespace Cooperchip.ItDeveloper.Mvc
 {
     public class Program
@@ -8,6 +11,9 @@ namespace Cooperchip.ItDeveloper.Mvc
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options => 
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
@@ -20,6 +26,8 @@ namespace Cooperchip.ItDeveloper.Mvc
             }
 
             app.UseHttpsRedirection();
+
+            //Precisamos dele para usar arquivos estaticos, estão dentro do wwwroot.
             app.UseStaticFiles();
 
             app.UseRouting();

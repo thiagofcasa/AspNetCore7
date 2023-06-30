@@ -1,0 +1,17 @@
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.deps.json
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.runtimeconfig.json
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.pdb
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.pdb
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.csproj.AssemblyReference.cache
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.AssemblyInfoInputs.cache
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.AssemblyInfo.cs
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.csproj.CoreCompileInputs.cache
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.csproj.CopyComplete
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\refint\ThinKsaDev.ItDeveloper.Data.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.pdb
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Data.genruntimeconfig.cache
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Data\obj\Debug\net7.0\ref\ThinKsaDev.ItDeveloper.Data.dll
