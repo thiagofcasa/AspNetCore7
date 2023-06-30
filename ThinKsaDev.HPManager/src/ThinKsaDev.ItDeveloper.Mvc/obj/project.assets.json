@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "ThinKsaDev.ItDeveloper.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ThinKsaDev.ItDeveloper.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ThinKsaDev.ItDeveloper.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ThinKsaDev.ItDeveloper.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ThinKsaDev.ItDeveloper.Domain/ThinKsaDev.ItDeveloper.Domain.csproj",
+      "msbuildProject": "../ThinKsaDev.ItDeveloper.Domain/ThinKsaDev.ItDeveloper.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "ThinKsaDev.ItDeveloper.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Thiago\\.nuget\\packages\\": {}
@@ -34,7 +53,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\DEV\\GIT\\AspNetCore7_Udemy\\AspNetCore7\\ThinKsaDev.HPManager\\src\\ThinKsaDev.ItDeveloper.Domain\\ThinKsaDev.ItDeveloper.Domain.csproj": {
+              "projectPath": "C:\\DEV\\GIT\\AspNetCore7_Udemy\\AspNetCore7\\ThinKsaDev.HPManager\\src\\ThinKsaDev.ItDeveloper.Domain\\ThinKsaDev.ItDeveloper.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

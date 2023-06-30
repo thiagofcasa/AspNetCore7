@@ -1,12 +1,14 @@
-﻿using ThinKsaDev.ItDeveloper.Domain.Enums;
+﻿using ThinKsaDev.ItDeveloper.Domain.Entities.Base;
+using ThinKsaDev.ItDeveloper.Domain.Enums;
 
 namespace ThinKsaDev.ItDeveloper.Domain.Entities
 {
-    public class Patient
+    public class Patient : EntityBase
     {
-        public Patient() { Active = true; }
-
-        public Guid Id { get; set; }
+        public Patient()
+        {
+            Active = true;
+        }
 
         public Guid PatientStateId { get; set; }
         public virtual PatientState? PatientState { get; set; }

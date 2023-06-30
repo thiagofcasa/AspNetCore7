@@ -60,3 +60,6 @@ C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItD
 C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Mvc\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Mvc.pdb
 C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Mvc\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Mvc.genruntimeconfig.cache
 C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Mvc\obj\Debug\net7.0\ref\ThinKsaDev.ItDeveloper.Mvc.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Mvc\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.dll
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Mvc\bin\Debug\net7.0\ThinKsaDev.ItDeveloper.Domain.pdb
+C:\DEV\GIT\AspNetCore7_Udemy\AspNetCore7\ThinKsaDev.HPManager\src\ThinKsaDev.ItDeveloper.Mvc\obj\Debug\net7.0\ThinKsaDev.ItDeveloper.Mvc.csproj.CopyComplete
