@@ -35,10 +35,14 @@ namespace ThinKsaDev.ItDeveloper.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Cpf")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(11)
+                        .HasColumnType("varchar(11)")
+                        .HasColumnName("Cpf")
+                        .IsFixedLength();
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(150)")
+                        .HasColumnName("Email");
 
                     b.Property<int>("Gender")
                         .HasColumnType("int");
@@ -50,7 +54,9 @@ namespace ThinKsaDev.ItDeveloper.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("varchar(80)")
+                        .HasColumnName("Nome");
 
                     b.Property<Guid>("PatientStateId")
                         .HasColumnType("uniqueidentifier");
@@ -59,16 +65,18 @@ namespace ThinKsaDev.ItDeveloper.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Reason")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(90)");
 
                     b.Property<string>("Rg")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15)")
+                        .HasColumnName("Rg");
 
                     b.HasKey("Id");
 
                     b.HasIndex("PatientStateId");
 
-                    b.ToTable("Patient");
+                    b.ToTable("Patient", (string)null);
                 });
 
             modelBuilder.Entity("ThinKsaDev.ItDeveloper.Domain.Entities.PatientState", b =>
@@ -78,11 +86,13 @@ namespace ThinKsaDev.ItDeveloper.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("Varchar(30)")
+                        .HasColumnName("Descricao");
 
                     b.HasKey("Id");
 
-                    b.ToTable("PatientState");
+                    b.ToTable("PatientState", (string)null);
                 });
 
             modelBuilder.Entity("ThinKsaDev.ItDeveloper.Domain.Entities.Patient", b =>
@@ -90,7 +100,6 @@ namespace ThinKsaDev.ItDeveloper.Data.Migrations
                     b.HasOne("ThinKsaDev.ItDeveloper.Domain.Entities.PatientState", "PatientState")
                         .WithMany("Patients")
                         .HasForeignKey("PatientStateId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("PatientState");

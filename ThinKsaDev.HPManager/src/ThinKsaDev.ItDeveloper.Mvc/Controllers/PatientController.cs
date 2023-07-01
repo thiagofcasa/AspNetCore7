@@ -13,90 +13,16 @@ namespace ThinKsaDev.ItDeveloper.Mvc.Controllers
         [Route("get-pacient")]
         public IActionResult Index()
         {
-            var patients = GetPatients();
-
-            return View(patients);
+            return View();
         }
 
         [HttpGet("patient-detail/{id}")]
         public IActionResult PatientDetails(string id)
         {
-            var patient = GetPatient(id);
-
-            if (patient == null)
-            {
-                return NotFound();
-            }
-
-            return View(patient);
-        }
-
-        
-
-        [Route("add-patient")]
-        [HttpPost("add-patient")]
-        public IActionResult AddPatient()
-        {
             return View();
         }
 
-        #region: Lista de Pacientes
-        private List<Patient> GetPatients()
-        {
-            var patients = new List<Patient>()
-            {
-                new Patient()
-                {
-                    Name = "Thiago",
-                    Cpf = "12345678910",
-                    Telefones = new List<Telefone>()
-                    {
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Residencial", Numero = "123456700"},
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Profissional", Numero = "123456701"},
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Movel", Numero = "123456702"}
-                    }
-                },
-                new Patient()
-                {
-                    Name = "Heloise",
-                    Cpf = "12345678910",
-                    Telefones = new List<Telefone>()
-                    {
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Residencial", Numero = "123456710"},
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Profissional", Numero = "123456711"},
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Movel", Numero = "123456711"}
-                    }
-                },
-                new Patient()
-                {
-                    Name = "Dominique",
-                    Cpf = "12345678910",
-                    Telefones = new List<Telefone>()
-                    {
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Residencial", Numero = "123456720"},
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Profissional", Numero = "123456721"},
-                        new Telefone() {Id = Guid.NewGuid(), PhoneType = "Movel", Numero = "123456722"}
-                    }
-                }
-            };
 
-            return patients;
-        }
-
-        private object GetPatient(string id)
-        {
-            var patients = GetPatients();
-            if (id != string.Empty && patients != null)
-            {
-                var patient = patients.FirstOrDefault(p => p.Name.Contains(id));
-                if (patient != null)
-                {
-                    return patient;
-                }
-            }
-            return null;
-        }
-        #endregion
     }
 
     public class Patient
