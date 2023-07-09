@@ -11,6 +11,8 @@ namespace ThinKsaDev.ItDeveloper.Data.Data.ORM
         public DbSet<Patient> Patient { get; set; }
         public DbSet<PatientState> PatientState { get; set; }
 
+         
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //nesse foreach ele pega todas as propriedades string que não tem referencia de tipo e atribui varchar(90)
