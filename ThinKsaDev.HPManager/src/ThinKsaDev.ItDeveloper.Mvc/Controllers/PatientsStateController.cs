@@ -29,7 +29,6 @@ namespace ThinKsaDev.ItDeveloper.Mvc.Controllers
         {
             //if (id == null)
             //    return NotFound("Registro não encontrado!");
-
             try
             {
                 //LINQ - usando o FirstAsync ele retorna alguem e caso não da uma exceção 
@@ -43,16 +42,16 @@ namespace ThinKsaDev.ItDeveloper.Mvc.Controllers
         }
 
         //O Create retorna o View vazia para preencher e depois sim fazer a inserção.
-        [HttpGet("adicionar-estado-paciente")]
+        [HttpGet()]
         public IActionResult Create()
         {
             return View();
         }
 
         //O Bind garante uma segurança, pois em um ataque o atacante precisa saber os campos que tem que passar.
-        [HttpPost("adicionar-estado-paciente")]
+        [HttpPost()]
         [ValidateAntiForgeryToken] //Validação anti ataque CSRS, usar em metodos de ação enquanto não tem validação global para isso.
-        public async Task<IActionResult> Create(/*[Bind("Descricao, Id")], */PatientState patientState)
+        public async Task<IActionResult> Create([Bind("Descricao")] PatientState patientState) /*(PatientState patientState)*/
         {
             //Verifica se o modelo passado é valido.
             if (ModelState.IsValid)
@@ -70,5 +69,59 @@ namespace ThinKsaDev.ItDeveloper.Mvc.Controllers
             return View(patientState);
         }
 
+        //[HttpGet]
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var patientState = await _context.PatientState.FindAsync(id);
+
+            return patientState switch
+            {
+                null => NotFound(),
+                _ => View(patientState)
+            };
+        }
+
+        [HttpPut]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Guid id, [Bind("Descricao, Id")] PatientState patientState)
+        {
+            if (id != patientState.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(patientState);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (PatientStateExists(patientState.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(patientState);
+        }
+
+
+        //teste de concorrencia para validar se não tem mais ninguem fazendo edição no mesmo local ao mesmo tempo.
+        private bool PatientStateExists(Guid id)
+        {
+
+            //pergunto ao contexto se dentro dele a algum objeto com esse id?
+            //vai retornar um bool
+            return _context.PatientState.Any(x => x.Id == id);
+
+        }
     }
 }
