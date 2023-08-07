@@ -1,0 +1,36 @@
+﻿@model ThinKsaDev.ItDeveloper.Domain.Entities.PatientState
+
+@{
+    ViewData["Title"] = "Exclusão de Estado do Paciente";
+}
+
+<partial name="PartialViews/_header" />
+
+<div class="panel panel-default panel-controls">
+    <div class="panel panel-heading">
+        <h3>Exclusão de Estado Paciente</h3>
+    </div>
+
+
+    <div class="panel panel-body">
+        <div>
+            <h5>Está certo que deseja excluir este registro?</h5>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+        </div>
+        <form asp-controller="PatientState" asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+            <a class="btn btn-default" asp-controller="PatientState" asp-action="Index">Voltar para Lista</a>
+        </form>
+
+    </div>
+
+</div>
