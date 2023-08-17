@@ -2,25 +2,25 @@
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <!-- Chamando aqui a ViewComponent critical-->  
         @*<vc:patient-state></vc:patient-state>*@
-        @await Component.InvokeAsync("PatientState")
+        @await Component.InvokeAsync("PatientStatus", new {status = "Crítico"})
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <!-- Chama aqui ViewComponent SteadyState -->
         @*<vc:patient-status></vc:patient-status>*@
-        @await Component.InvokeAsync("PatientState")
+        @await Component.InvokeAsync("PatientStatus", new {status = "Grave"})
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <!-- ViewCompondente SeriousState -->
         @*<vc:patient-status></vc:patient-status>*@
-        @await Component.InvokeAsync("PatientState")
+        @await Component.InvokeAsync("PatientStatus", new {status = "Em Observação"})
         
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <!-- ViewComponent ObservationState -->
         @*<vc:patient-status></vc:patient-status>*@
-        @await Component.InvokeAsync("PatientState")
+        @await Component.InvokeAsync("PatientStatus", new {status = "Estável"})
     </div>
 
 </div>

@@ -68,8 +68,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUGF0aWVudFN0YXRlVmlld0NvbXBvbmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DEV/GIT/AspNetCore7_Udemy/AspNetCore7/ThinKsaDev.HPManager/src/ThinKsaDev.ItDeveloper.Mvc/Views/Shared/Components/PatientState/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUGF0aWVudFN0YXRlXERlZmF1bHQuY3NodG1s
+[C:/DEV/GIT/AspNetCore7_Udemy/AspNetCore7/ThinKsaDev.HPManager/src/ThinKsaDev.ItDeveloper.Mvc/Views/Shared/Components/PatientStatus/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUGF0aWVudFN0YXR1c1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/DEV/GIT/AspNetCore7_Udemy/AspNetCore7/ThinKsaDev.HPManager/src/ThinKsaDev.ItDeveloper.Mvc/Views/Shared/Components/SeriousState/Default.cshtml]
